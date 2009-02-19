@@ -1,0 +1,83 @@
+libvncserver
+------------------------------------------
+VNC client and server libraries
+
+Runtime requirements:
+  cygwin-1.5.25-15
+  libjpeg62-6b-12
+  zlib-1.2.3-2
+
+Build requirements:
+(besides corresponding -devel packages)
+  autoconf2.5-2.63-1
+  automake1.10-1.10.1-2
+  binutils-20080624-2
+  cygport-0.4.3-1
+  gawk-3.1.6-1
+  gcc-core-3.4.4-3
+  libSDL-devel-1.2.13-2
+  libtool-2.2.6a-1
+  make-3.81-1
+  sed-4.1.5-2
+
+Canonical website:
+  http://libvncserver.sourceforge.net/
+
+Canonical download:
+  http://downloads.sourceforge.net/libvncserver/
+
+-------------------------------------------
+
+Build instructions:
+  unpack libvncserver-0.9.7-X-src.tar.bz2
+    if you use setup to install this src package, it will be
+	 unpacked under /usr/src automatically
+  cd /usr/src
+  cygport ./libvncserver-0.9.7-X.cygport all
+
+This will create:
+  /usr/src/libvncserver-0.9.7-X-src.tar.bz2
+  /usr/src/libvncserver-devel-0.9.7-X.tar.bz2
+  /usr/src/libvncserver0-0.9.7-X.tar.bz2
+
+-------------------------------------------
+
+Files included in the binary package:
+
+(libvncserver0)
+  /usr/bin/cygvncclient-0.dll
+  /usr/bin/cygvncserver-0.dll
+  /usr/share/doc/libvncserver-0.9.7/AUTHORS
+  /usr/share/doc/libvncserver-0.9.7/COPYING
+  /usr/share/doc/libvncserver-0.9.7/ChangeLog
+  /usr/share/doc/libvncserver-0.9.7/INSTALL
+  /usr/share/doc/libvncserver-0.9.7/NEWS
+  /usr/share/doc/libvncserver-0.9.7/README
+  /usr/share/doc/libvncserver-0.9.7/TODO
+
+(libvncserver-devel)
+  /usr/bin/libvncserver-config
+  /usr/include/rfb/keysym.h
+  /usr/include/rfb/rfb.h
+  /usr/include/rfb/rfbclient.h
+  /usr/include/rfb/rfbconfig.h
+  /usr/include/rfb/rfbint.h
+  /usr/include/rfb/rfbproto.h
+  /usr/include/rfb/rfbregion.h
+  /usr/lib/libvncclient.a
+  /usr/lib/libvncclient.dll.a
+  /usr/lib/libvncclient.la
+  /usr/lib/libvncserver.a
+  /usr/lib/libvncserver.dll.a
+  /usr/lib/libvncserver.la
+
+------------------
+
+Port Notes:
+
+----- version 0.9.7-1 -----
+Initial release for Cygwin.
+
+
+Cygwin port maintained by:
+http://sourceware.org/cygwinports/
