@@ -1,5 +1,5 @@
 category: Net
-requires: cygwin libvncserver0 libjpeg-devel zlib-devel
+requires: libvncserver0 libjpeg-devel zlib-devel
 external-source: libvncserver
 sdesc: "VNC client and server libraries (development)"
 ldesc: "VNC client and server libraries"
