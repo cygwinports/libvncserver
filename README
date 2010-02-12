@@ -3,21 +3,21 @@ libvncserver
 VNC client and server libraries
 
 Runtime requirements:
-  cygwin-1.7.0-49
-  libgcc1-4.3.2-2
-  libjpeg62-6b-20
+  cygwin-1.7.1-1
+  libgcc1-4.3.4-3
+  libjpeg7-7-10
   zlib0-1.2.3-10
 
 Build requirements:
 (besides corresponding -devel packages)
-  autoconf2.5-2.63-10
-  automake1.10-1.10.2-10
-  binutils-20080624-2
-  cygport-0.9.6-1
-  gawk-3.1.6-2
-  gcc4-core-4.3.2-2
-  libSDL-devel-1.2.13-10
-  libtool-2.2.7a-12
+  autoconf2.5-2.65-1
+  automake1.10-1.10.3-1
+  binutils-2.19.51-1
+  cygport-0.9.80-1
+  gawk-3.1.7-1
+  gcc4-core-4.3.4-3
+  libSDL-devel-1.2.14-1
+  libtool-2.2.7a-15
   make-3.81-2
   sed-4.1.5-2
 
@@ -43,37 +43,10 @@ This will create:
 
 -------------------------------------------
 
-Files included in the binary package:
-
-(libvncserver0)
-  /usr/bin/cygvncclient-0.dll
-  /usr/bin/cygvncserver-0.dll
-  /usr/share/doc/libvncserver/AUTHORS
-  /usr/share/doc/libvncserver/COPYING
-  /usr/share/doc/libvncserver/ChangeLog
-  /usr/share/doc/libvncserver/NEWS
-  /usr/share/doc/libvncserver/README
-  /usr/share/doc/libvncserver/TODO
-
-(libvncserver-devel)
-  /usr/bin/libvncserver-config
-  /usr/include/rfb/keysym.h
-  /usr/include/rfb/rfb.h
-  /usr/include/rfb/rfbclient.h
-  /usr/include/rfb/rfbconfig.h
-  /usr/include/rfb/rfbint.h
-  /usr/include/rfb/rfbproto.h
-  /usr/include/rfb/rfbregion.h
-  /usr/lib/libvncclient.a
-  /usr/lib/libvncclient.dll.a
-  /usr/lib/libvncclient.la
-  /usr/lib/libvncserver.a
-  /usr/lib/libvncserver.dll.a
-  /usr/lib/libvncserver.la
-
-------------------
-
 Port Notes:
+
+----- version 0.9.7-11 -----
+Rebuilt for jpeg-7.
 
 ----- version 0.9.7-10 -----
 Initial release for Cygwin 1.7.
