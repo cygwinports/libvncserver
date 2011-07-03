@@ -1,12 +1,12 @@
 DESCRIPTION="VNC client and server libraries"
 HOMEPAGE="http://libvncserver.sourceforge.net/"
 SRC_URI="mirror://sourceforge/libvncserver/LibVNCServer-${PV}.tar.gz"
-PATCH_URI="0.9.7-no-undefined.patch
-           0.9.7-autotools.patch"
+PATCH_URI="0.9.8-no-undefined.patch
+           0.9.8-autotools.patch"
 
 SRC_DIR="LibVNCServer-${PV}"
 
-PKG_NAMES="${PN} ${PN}0 ${PN}-devel"
+PKG_NAMES="${PN}0 ${PN}-devel"
 libvncserver0_CONTENTS="usr/bin/*-0.dll usr/share/doc/"
 libvncserver_devel_CONTENTS="usr/bin/*-config usr/include/ usr/lib/"
 

@@ -1,0 +1,20 @@
+--- origsrc/LibVNCServer-0.9.8/Makefile.am	2011-03-29 06:58:56.000000000 -0500
++++ src/LibVNCServer-0.9.8/Makefile.am	2011-07-03 07:49:01.668987600 -0500
+@@ -1,5 +1,5 @@
+ if WITH_X11VNC
+-X11VNC=x11vnc
++#X11VNC=x11vnc
+ endif
+ 
+ SUBDIRS=libvncserver examples libvncclient vncterm classes client_examples test $(X11VNC)
+--- origsrc/LibVNCServer-0.9.8/configure.ac	2011-03-29 06:58:56.000000000 -0500
++++ src/LibVNCServer-0.9.8/configure.ac	2011-07-03 07:48:53.174965900 -0500
+@@ -855,7 +855,7 @@ if test "$build_x11vnc" = "yes"; then
+ 	#
+ 	# configure.ac:690: required file `x11vnc/Makefile.in' not found
+ 	#
+-	AC_CONFIG_FILES([x11vnc/Makefile x11vnc/misc/Makefile x11vnc/misc/turbovnc/Makefile])
++	#AC_CONFIG_FILES([x11vnc/Makefile x11vnc/misc/Makefile x11vnc/misc/turbovnc/Makefile])
+ 
+ 	if test ! -z "$with_system_libvncserver" -a "x$with_system_libvncserver" != "xno"; then
+ 		# need to move local tarball rfb headers aside:

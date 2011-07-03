@@ -1,0 +1,22 @@
+--- origsrc/LibVNCServer-0.9.8/libvncclient/Makefile.am	2011-03-25 08:07:24.000000000 -0500
++++ src/LibVNCServer-0.9.8/libvncclient/Makefile.am	2011-07-01 19:15:40.278115100 -0500
+@@ -2,6 +2,8 @@ INCLUDES = -I$(top_srcdir) -I$(top_srcdi
+ 
+ libvncclient_la_SOURCES=cursor.c listen.c rfbproto.c sockets.c vncviewer.c ../common/minilzo.c tls.c
+ 
++libvncclient_la_LDFLAGS = -no-undefined
++
+ noinst_HEADERS=../common/lzodefs.h ../common/lzoconf.h ../common/minilzo.h tls.h
+ 
+ rfbproto.o: rfbproto.c corre.c hextile.c rre.c tight.c zlib.c zrle.c ultra.c
+--- origsrc/LibVNCServer-0.9.8/libvncserver/Makefile.am	2011-03-25 08:07:24.000000000 -0500
++++ src/LibVNCServer-0.9.8/libvncserver/Makefile.am	2011-07-01 19:15:32.914902300 -0500
+@@ -41,6 +41,8 @@ LIB_SRCS = main.c rfbserver.c rfbregion.
+ 
+ libvncserver_la_SOURCES=$(LIB_SRCS)
+ 
++libvncserver_la_LDFLAGS = -no-undefined
++
+ lib_LTLIBRARIES=libvncserver.la
+ 
+ if HAVE_RPM

@@ -1,5 +1,5 @@
 category: Net
-requires: libjpeg8 zlib0
+requires: libgcc1 libgcrypt11 libgnutls26 libjpeg8 zlib0
 external-source: libvncserver
 sdesc: "VNC client and server libraries (runtime)"
 ldesc: "VNC client and server libraries"
