@@ -14,3 +14,6 @@ CYGPORT_USE_UNSTABLE_API=1
 src_unpack_hook() {
 	sed -e '/^\# libtool\.m4/,$d' -i acinclude.m4
 }
+
+CYGCONF_ARGS="--disable-static"
+KEEP_LA_FILES="none"
