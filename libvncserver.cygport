@@ -1,23 +1,19 @@
 NAME="libvncserver"
-VERSION=0.9.9
+VERSION=0.9.10
 RELEASE=1
 CATEGORY="Net"
 SUMMARY="VNC client and server libraries"
 DESCRIPTION="LibVNCServer/LibVNCClient are cross-platform C libraries that allow
 you to easily implement VNC server or client functionality in your program."
-HOMEPAGE="http://libvncserver.sourceforge.net/"
-SRC_URI="mirror://sourceforge/libvncserver/LibVNCServer-${VERSION}.tar.gz"
-SRC_DIR="LibVNCServer-${VERSION}"
-PATCH_URI="0.9.8-no-undefined.patch
-           0.9.8-autotools.patch"
+HOMEPAGE="https://libvnc.github.io/"
+SRC_URI="https://github.com/LibVNC/libvncserver/archive/LibVNCServer-${VERSION}.tar.gz"
+SRC_DIR="libvncserver-LibVNCServer-${VERSION}"
+PATCH_URI="
+	0.9.10-no-undefined.patch
+"
 
-PKG_NAMES="${PN}0 ${PN}-devel"
+PKG_NAMES="${NAME}0 ${NAME}-devel"
 libvncserver0_CONTENTS="usr/bin/*-0.dll usr/share/doc/"
 libvncserver_devel_CONTENTS="usr/bin/*-config usr/include/ usr/lib/"
-
-CYGPORT_USE_UNSTABLE_API=1
-src_unpack_hook() {
-	sed -e '/^\# libtool\.m4/,$d' -i acinclude.m4
-}
 
 KEEP_LA_FILES="none"

@@ -1,0 +1,20 @@
+--- origsrc/libvncserver-LibVNCServer-0.9.10/libvncclient/Makefile.am	2014-10-21 10:57:11.000000000 -0500
++++ src/libvncserver-LibVNCServer-0.9.10/libvncclient/Makefile.am	2015-01-04 12:00:44.550935900 -0600
+@@ -15,6 +15,7 @@ endif
+ 
+ libvncclient_la_SOURCES=cursor.c listen.c rfbproto.c sockets.c vncviewer.c ../common/minilzo.c $(TLSSRCS)
+ libvncclient_la_LIBADD=$(TLSLIBS) $(VA_LIBS)
++libvncclient_la_LDFLAGS=-no-undefined
+ 
+ noinst_HEADERS=../common/lzodefs.h ../common/lzoconf.h ../common/minilzo.h tls.h
+ 
+--- origsrc/libvncserver-LibVNCServer-0.9.10/libvncserver/Makefile.am	2014-10-21 10:57:11.000000000 -0500
++++ src/libvncserver-LibVNCServer-0.9.10/libvncserver/Makefile.am	2015-01-04 12:01:01.664165700 -0600
+@@ -59,6 +59,7 @@ LIB_SRCS = main.c rfbserver.c rfbregion.
+ 
+ libvncserver_la_SOURCES=$(LIB_SRCS)
+ libvncserver_la_LIBADD=$(WEBSOCKETSSSLLIBS)
++libvncserver_la_LDFLAGS=-no-undefined
+ 
+ lib_LTLIBRARIES=libvncserver.la
+ 
