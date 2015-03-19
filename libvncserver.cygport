@@ -1,6 +1,6 @@
 NAME="libvncserver"
 VERSION=0.9.10
-RELEASE=1
+RELEASE=2
 CATEGORY="Net"
 SUMMARY="VNC client and server libraries"
 DESCRIPTION="LibVNCServer/LibVNCClient are cross-platform C libraries that allow
